@@ -1,0 +1,18 @@
+{
+    "validation_key": "hadam3",
+    "ui_label": "HadAM3",
+    "description": "Dynamical, thermodynamical, and physical processes in the atmosphere",
+    "code_base": "private",
+    "component": "atmosphere",
+    "family": "",
+    "references": [
+        "https://doi.org/10.1007/s003820050010 https://doi.org/10.5194/gmd-10-3715-2017 https://doi.org/10.1007/s003820050009"
+    ],
+    "@context": "_context",
+    "@type": [
+        "emd",
+        "wcrp:model_component",
+        "esgvoc:ModelComponent"
+    ],
+    "@id": "hadam3"
+}
