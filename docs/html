@@ -283,21 +283,21 @@
                 <div class="text-muted-foreground text-sm font-medium">Menu</div>
                 <div class="flex flex-col gap-3">
                     
-                    <a class="text-2xl font-medium" href="/FAQ/">
+                    <a class="text-2xl font-medium" href="/Progress_Feed/">
                         
-                        FAQ
+                        EMD Submission Feed
                         
                     </a>
                     
                     <a class="text-2xl font-medium" href="/.">
                         
-                        Home
+                        Essential Model Documentation (EMD)
                         
                     </a>
                     
-                    <a class="text-2xl font-medium" href="/Progress_Feed/">
+                    <a class="text-2xl font-medium" href="/FAQ/">
                         
-                        Progress Feed
+                        Frequently Asked Questions
                         
                     </a>
                     
@@ -315,13 +315,13 @@
                         
                         <a class="text-2xl font-medium" href="/Developer_Guidance/Github%20Actions%2C%20Workflows_and_Automation/">
                             
-                            Github Actions, Workflows and Automation
+                            How a Submission is Processed
                             
                         </a>
                         
                         <a class="text-2xl font-medium" href="/Developer_Guidance/Issue_Templates/">
                             
-                            Issue Templates
+                            Issue Templates — Structure and Maintenance
                             
                         </a>
                         
@@ -417,7 +417,7 @@
                         
                         <a class="text-2xl font-medium" href="/EMD_health/">
                             
-                            Index
+                            EMD Health Dashboard — how the graphs are computed
                             
                         </a>
                         
@@ -430,21 +430,15 @@
                     
                     <div class="flex flex-col gap-3">
                         
-                        <a class="text-2xl font-medium" href="/Information_for_Submitters/Error_Meanings/">
+                        <a class="text-2xl font-medium" href="/Information_for_Submitters/Submission-Guide/">
                             
-                            Error Meanings
+                            EMD Submission Guide
                             
                         </a>
                         
                         <a class="text-2xl font-medium" href="/Information_for_Submitters/Registering_an_Institution/">
                             
                             Registering an Institution
-                            
-                        </a>
-                        
-                        <a class="text-2xl font-medium" href="/Information_for_Submitters/Submission-Guide/">
-                            
-                            Submission Guide
                             
                         </a>
                         
@@ -456,7 +450,13 @@
                         
                         <a class="text-2xl font-medium" href="/Information_for_Submitters/What_to_expect_on_submission/">
                             
-                            What to expect on submission
+                            What to Expect on Submission
+                            
+                        </a>
+                        
+                        <a class="text-2xl font-medium" href="/Information_for_Submitters/Error_Meanings/">
+                            
+                            When Things Go Wrong
                             
                         </a>
                         
@@ -478,15 +478,15 @@
                     
                     <div class="flex flex-col gap-3">
                         
-                        <a class="text-2xl font-medium" href="/Reviewer_Guidance/Interpreting_The_Review_Summary/">
+                        <a class="text-2xl font-medium" href="/Reviewer_Guidance/Review_Checklist/">
                             
-                            Interpreting The Review Summary
+                            EMD Reviewer Checklist — Common Mistakes by File Type
                             
                         </a>
                         
-                        <a class="text-2xl font-medium" href="/Reviewer_Guidance/Review_Checklist/">
+                        <a class="text-2xl font-medium" href="/Reviewer_Guidance/Interpreting_The_Review_Summary/">
                             
-                            Review Checklist
+                            Interpreting the Review Summary
                             
                         </a>
                         
