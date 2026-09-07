@@ -7,6 +7,7 @@ Handles both:
 """
 
 import os
+import re
 import importlib.util as _importlib_util
 # from cmipld.utils.similarity import ReportBuilder  # disabled for non-grid types
 
@@ -36,20 +37,29 @@ BAD_KEYS = {'id', 'type', 'context'}
 
 
 def _clean_id(s: str) -> str:
-    return s.strip().replace(' ', '-')
+    """Normalise a family name to a slug: spaces/underscores → dashes, strip invalid chars."""
+    s = s.strip().replace(' ', '-').replace('_', '-')
+    s = re.sub(r'[^A-Za-z0-9\-.]', '', s)
+    return s
 
 def _parse_list(value) -> list:
     if isinstance(value, list):
         return [str(v).strip() for v in value if str(v).strip()]
     s = str(value)
-    # Split on newlines or commas first; fall back to whitespace (e.g. space-separated URLs)
+    # Split on newlines or commas first. The issue parser collapses newlines to
+    # spaces, so several URLs can arrive as one whitespace-separated string; split
+    # those too. Only when more than one URL is present, otherwise a reference like
+    # "Smith et al. 2020 https://doi.org/..." would be torn apart, and free text
+    # would survive as a single entry either way.
     if '\n' in s:
         parts = s.split('\n')
     elif ',' in s:
         parts = s.split(',')
-    else:
+    elif s.count('http') > 1:
         import re
         parts = re.split(r'\s+(?=https?://)', s)
+    else:
+        parts = [s]
     return [v.strip() for v in parts if v.strip()]
 
 
@@ -71,7 +81,7 @@ def run(parsed_issue, issue, dry_run=False):
 
     data = {
         "@context":       "_context",
-        "@id":            atid,
+        "@id":            atid.lower(),
         "@type":          ["emd", wcrp_type, esgvoc_type],
         "validation_key": atid,
         "ui_label":       family_name.strip(),

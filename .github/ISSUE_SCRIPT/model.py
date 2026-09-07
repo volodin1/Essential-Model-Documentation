@@ -25,6 +25,7 @@ _spec = _importlib_util.spec_from_file_location(
 _name_similarity = _importlib_util.module_from_spec(_spec)
 _spec.loader.exec_module(_name_similarity)
 build_similarity_report = _name_similarity.build_similarity_report
+build_details_block = _name_similarity.build_details_block
 
 kind = __file__.split('/')[-1].replace('.py', '')
 
@@ -88,7 +89,21 @@ def _parse_list(value, lowercase=False) -> list:
 def _parse_refs(value) -> list:
     if isinstance(value, list):
         return [str(v).strip() for v in value if str(v).strip()]
-    return [v.strip() for v in re.split(r'[,\s]+', str(value)) if v.strip()]
+    s = str(value)
+    # Split on newlines or commas first. The issue parser collapses newlines to
+    # spaces, so several URLs can arrive as one whitespace-separated string; split
+    # those too. Only when more than one URL is present, otherwise a reference like
+    # "Smith et al. 2020 https://doi.org/..." would be torn apart, and free text
+    # would survive as a single entry either way.
+    if '\n' in s:
+        parts = s.split('\n')
+    elif ',' in s:
+        parts = s.split(',')
+    elif s.count('http') > 1:
+        parts = re.split(r'\s+(?=https?://)', s)
+    else:
+        parts = [s]
+    return [v.strip() for v in parts if v.strip()]
 
 
 # Multi-char arrow separators for embedded-component pairs.  Bare '>' is
@@ -145,9 +160,9 @@ def run(parsed_issue, issue, dry_run=False):
     if not source_id:
         return None
 
-    source_id_lower = source_id.lower()
     # validation_key: preserve casing, replace dots with hyphens, strip other non [A-Za-z0-9-] chars
     validation_key = re.sub(r'[^A-Za-z0-9-]', '', source_id.replace('.', '-'))
+    source_id_lower = validation_key.lower()
     family = (parsed_issue.get('model_family') or parsed_issue.get('family') or '').strip()
 
     data = {
@@ -290,10 +305,19 @@ def update(files_to_write, parsed_issue, issue, dry_run=False):
         # Strip name if JSONValidator re-injected it
         # data.pop('name', None)
         data['name'] = source_id  # ensure name matches validation_key/ui_label
-        # Lightweight check: flag suspiciously similar existing names in the same folder.
+        # Build the PR body block: description + references first, then the
+        # lightweight similarity check.  Same field ('_validation_report') the
+        # grid handlers use, so the CMIPLD framework overwrites this section
+        # of the PR body on every rerun rather than stacking new comments.
         folder = os.path.dirname(file_path) or 'model'
         proposed_id = data.get('@id') or source_id
-        data['_validation_report'] = build_similarity_report(proposed_id, folder)
+        details = build_details_block(
+            name=proposed_id,
+            description=data.get('description', ''),
+            references=data.get('references', []),
+        )
+        similarity = build_similarity_report(proposed_id, folder)
+        data['_validation_report'] = '\n\n'.join(p for p in (details, similarity) if p)
 
     if model_data and source_id:
         clean = {k: v for k, v in model_data.items() if not k.startswith('_')}

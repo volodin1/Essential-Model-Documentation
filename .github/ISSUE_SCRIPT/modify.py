@@ -141,13 +141,20 @@ def run(parsed_issue, issue, dry_run=False):
             _post_comment(issue_number, msg)
         return None
 
-    # ── Map JSON-LD shorthand aliases to the actual key names used in files ──
-    _KEY_ALIASES = {
-        '@id':   'validation_key',
-        '@type': 'type',
-    }
-    if key in _KEY_ALIASES:
-        key = _KEY_ALIASES[key]
+    # ── Protect structural JSON-LD keys from accidental modification ──
+    # @id and @type are derived fields — direct edits would break linking.
+    # Point users to the correct field instead.
+    _BLOCKED_KEYS = {'@id', '@type', '@context'}
+    if key in _BLOCKED_KEYS:
+        msg = (
+            f'## ❌ Cannot modify `{key}`\n\n'
+            f'`{key}` is a structural JSON-LD field derived from the filename '
+            f'and cannot be edited directly. '
+            f'To change the display name, modify `validation_key` or `ui_label` instead.'
+        )
+        if not dry_run and issue_number:
+            _post_comment(issue_number, msg)
+        return None
 
     if justification.lower() in _PLACEHOLDER:
         msg = '## ❌ Cannot modify: justification is required.'
@@ -233,11 +240,16 @@ def run(parsed_issue, issue, dry_run=False):
     contributors = [c.strip() for c in collab_str.split(',') if c.strip()] \
                    if collab_str else []
 
+    # `_force_modify` tells new_issue.py that overwriting an existing file is the
+    # intent here, not an accident. Without it the writer's "File already exists"
+    # guard rejects every submission from this form, since the guard only skips
+    # when issue_kind == 'modify' and no handler sets issue_kind.
     return {
         rel_path:         data,
         '_author':        issue.get('author'),
         '_contributors':  contributors,
         '_make_pull':     True,
+        '_force_modify':  {rel_path},
         '_justification': justification,
         '_modify_key':    key,
         '_modify_old':    old_value,
