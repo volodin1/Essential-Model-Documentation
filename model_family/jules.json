@@ -8,8 +8,7 @@
     "established": "",
     "family_type": "component",
     "primary_institution": "mohc",
-    "references": [
-    ],
+    "references": [],
     "representative_member": "UKCM2-0-LL",
     "scientific_domains": [
         "land_surface"
@@ -19,7 +18,8 @@
     "@type": [
         "emd",
         "wcrp:model_family",
-        "esgvoc:ModelFamily"
+        "esgvoc:ModelFamily",
+        "undefined"
     ],
     "@id": "jules"
 }

@@ -2,7 +2,9 @@
     "validation_key": "g112",
     "ui_label": "Horizontal grid cell with a tripolar grid type and 1 x 1 degree resolution.",
     "description": "",
-    "alias": ["ORCA1"],
+    "alias": [
+        "ORCA1"
+    ],
     "grid_mapping": "latitude-longitude",
     "grid_type": "tripolar",
     "n_cells": 120184,
@@ -21,7 +23,8 @@
     "@type": [
         "wcrp:horizontal_grid_cell",
         "esgvoc:HorizontalGridCell",
-        "emd"
+        "emd",
+        "undefined"
     ],
     "@id": "g112"
 }

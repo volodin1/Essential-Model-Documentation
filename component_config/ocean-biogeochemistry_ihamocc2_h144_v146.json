@@ -9,7 +9,8 @@
     "@type": [
         "emd",
         "wcrp:component_config",
-        "esgvoc:ComponentConfig"
+        "esgvoc:ComponentConfig",
+        "undefined"
     ],
     "@id": "ocean-biogeochemistry_ihamocc2_h144_v146"
 }

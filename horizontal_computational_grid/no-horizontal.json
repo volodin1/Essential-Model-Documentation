@@ -8,7 +8,8 @@
     "@type": [
         "wcrp:horizontal_computational_grid",
         "esgvoc:HorizontalComputationalGrid",
-        "emd"
+        "emd",
+        "undefined"
     ],
     "@id": "no-horizontal"
 }

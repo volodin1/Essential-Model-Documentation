@@ -23,7 +23,8 @@
     "@type": [
         "emd",
         "wcrp:model_family",
-        "esgvoc:ModelFamily"
+        "esgvoc:ModelFamily",
+        "undefined"
     ],
     "@id": "cas-fgoals-g3.5"
 }

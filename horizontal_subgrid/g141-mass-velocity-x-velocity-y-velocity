@@ -13,7 +13,8 @@
     "@type": [
         "wcrp:horizontal_subgrid",
         "esgvoc:HorizontalSubgrid",
-        "emd"
+        "emd",
+        "undefined"
     ],
     "@id": "g141-mass-velocity-x-velocity-y-velocity"
 }

@@ -13,7 +13,8 @@
     "@type": [
         "emd",
         "wcrp:model_component",
-        "esgvoc:ModelComponent"
+        "esgvoc:ModelComponent",
+        "undefined"
     ],
     "@id": "cism3-nor"
 }

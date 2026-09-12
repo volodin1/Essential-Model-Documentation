@@ -2,7 +2,9 @@
     "validation_key": "g101",
     "ui_label": "Horizontal grid cell with a linear spectral gaussian grid type and 1.4 x 1.4 degree resolution.",
     "description": "",
-    "alias": ["TL127"],
+    "alias": [
+        "TL127"
+    ],
     "grid_mapping": "latitude-longitude",
     "grid_type": "linear-spectral-gaussian",
     "n_cells": 24572,
@@ -21,7 +23,8 @@
     "@type": [
         "emd",
         "wcrp:horizontal_grid_cell",
-        "esgvoc:HorizontalGridCell"
+        "esgvoc:HorizontalGridCell",
+        "undefined"
     ],
     "@id": "g101"
 }

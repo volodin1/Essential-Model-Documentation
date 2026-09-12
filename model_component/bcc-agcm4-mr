@@ -21,7 +21,8 @@
     "@type": [
         "emd",
         "wcrp:model_component",
-        "esgvoc:ModelComponent"
+        "esgvoc:ModelComponent",
+        "undefined"
     ],
     "@id": "bcc-agcm4-mr"
 }

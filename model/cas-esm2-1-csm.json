@@ -69,7 +69,8 @@
     "@type": [
         "emd",
         "wcrp:model",
-        "esgvoc:Model"
+        "esgvoc:Model",
+        "undefined"
     ],
     "@id": "cas-esm2-1-csm"
 }

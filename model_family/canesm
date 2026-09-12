@@ -25,7 +25,8 @@
     "@type": [
         "emd",
         "wcrp:model_family",
-        "esgvoc:ModelFamily"
+        "esgvoc:ModelFamily",
+        "undefined"
     ],
     "@id": "canesm"
 }

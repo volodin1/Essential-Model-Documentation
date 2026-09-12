@@ -37,7 +37,8 @@
     "@type": [
         "emd",
         "wcrp:model_component",
-        "esgvoc:ModelComponent"
+        "esgvoc:ModelComponent",
+        "undefined"
     ],
     "@id": "licom-v2-0"
 }

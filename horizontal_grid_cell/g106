@@ -21,7 +21,8 @@
     "@type": [
         "wcrp:horizontal_grid_cell",
         "esgvoc:HorizontalGridCell",
-        "emd"
+        "emd",
+        "undefined"
     ],
     "@id": "g106"
 }

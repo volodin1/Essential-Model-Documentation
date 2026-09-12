@@ -12,7 +12,8 @@
     "@type": [
         "emd",
         "wcrp:model_component",
-        "esgvoc:ModelComponent"
+        "esgvoc:ModelComponent",
+        "undefined"
     ],
     "@id": "mri-agcm4-4-land-surface"
 }

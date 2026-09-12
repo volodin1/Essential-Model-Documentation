@@ -1,9 +1,9 @@
 {
   "@context": {
-    "@alt_base": "https://wcrp-cmip.github.io/Essential-Model-Documentation/component_config/",
-    "@base": "https://emd.mipcvs.dev/component_config/",
+    "@alt_base": "https://volodin1.github.io/Essential-Model-Documentation/component_config/",
+    "@base": "https://https://github.com/volodin1/Essential-Model-Documentation/.mipcvs.dev/component_config/",
     "@esgvoc": "ComponentConfig",
-    "@vocab": "https://emd.mipcvs.dev/docs/contents/ComponentConfig/",
+    "@vocab": "https://https://github.com/volodin1/Essential-Model-Documentation/.mipcvs.dev/docs/contents/ComponentConfig/",
     "horizontal_computational_grid": {
       "@context": "https://emd.mipcvs.dev/horizontal_computational_grid/_context",
       "@type": "@id"

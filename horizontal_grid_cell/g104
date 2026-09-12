@@ -2,7 +2,9 @@
     "validation_key": "g104",
     "ui_label": "V-grid cells on ocean tripolar configuration (eORCA1) for y-velocity.",
     "description": "",
-    "alias": ["eORCA1-V"],
+    "alias": [
+        "eORCA1-V"
+    ],
     "grid_mapping": "latitude-longitude",
     "grid_type": "tripolar",
     "n_cells": 105706,
@@ -21,7 +23,8 @@
     "@type": [
         "emd",
         "wcrp:horizontal_grid_cell",
-        "esgvoc:HorizontalGridCell"
+        "esgvoc:HorizontalGridCell",
+        "undefined"
     ],
     "@id": "g104"
 }

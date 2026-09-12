@@ -15,7 +15,8 @@
     "@type": [
         "emd",
         "wcrp:model_component",
-        "esgvoc:ModelComponent"
+        "esgvoc:ModelComponent",
+        "undefined"
     ],
     "@id": "cice4-0"
 }

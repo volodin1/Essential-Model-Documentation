@@ -12,7 +12,8 @@
     "@type": [
         "wcrp:horizontal_subgrid",
         "esgvoc:HorizontalSubgrid",
-        "emd"
+        "emd",
+        "undefined"
     ],
     "@id": "g106-y-velocity"
 }

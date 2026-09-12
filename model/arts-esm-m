@@ -54,7 +54,8 @@
     "@type": [
         "emd",
         "wcrp:model",
-        "esgvoc:Model"
+        "esgvoc:Model",
+        "undefined"
     ],
     "@id": "arts-esm-m"
 }
