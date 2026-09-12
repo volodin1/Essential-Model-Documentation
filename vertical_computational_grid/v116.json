@@ -12,7 +12,8 @@
     "@type": [
         "wcrp:vertical_computational_grid",
         "esgvoc:VerticalComputationalGrid",
-        "emd"
+        "emd",
+        "undefined"
     ],
     "@id": "v116"
 }

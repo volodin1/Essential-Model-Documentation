@@ -63,7 +63,8 @@
     "@type": [
         "emd",
         "wcrp:model",
-        "esgvoc:Model"
+        "esgvoc:Model",
+        "undefined"
     ],
     "@id": "hadcm3b-esm"
 }

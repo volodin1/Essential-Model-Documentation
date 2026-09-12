@@ -7,14 +7,14 @@
     "family_type": "component",
     "primary_institution": "",
     "references": "",
-    "scientific_domains": [
-    ],
+    "scientific_domains": [],
     "website": "",
     "@context": "_context",
     "@type": [
         "emd",
         "wcrp:model_family",
-        "esgvoc:ModelFamily"
+        "esgvoc:ModelFamily",
+        "undefined"
     ],
     "@id": "no-family"
 }
