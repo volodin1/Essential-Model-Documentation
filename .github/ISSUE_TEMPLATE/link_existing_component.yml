@@ -134,6 +134,7 @@ body:
         - "metum-ga9"
         - "metum-ga9a"
         - "mom5"
+        - "mom5-p25"
         - "moses2-1"
         - "mri-agcm4-4"
         - "mri-agcm4-4-land-surface"
@@ -146,6 +147,7 @@ body:
         - "nemo3-6"
         - "nobmg"
         - "openifs-48r1"
+        - "oslo-tropstrat-v3"
         - "piscesv2-gas"
         - "pism-v1-2-line"
         - "reprobus-c_v2_0"
@@ -330,6 +332,7 @@ body:
         - "v163"
         - "v164"
         - "v165"
+        - "v166"
       default: 0
     validations:
       required: true
