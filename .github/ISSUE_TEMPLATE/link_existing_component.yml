@@ -55,6 +55,7 @@ body:
         - "cam-ice1"
         - "cam5-mam3"
         - "cam5-trop-mam3"
+        - "cam7"
         - "canam5-1"
         - "canam5-1-aerosol"
         - "canam6"
@@ -334,6 +335,7 @@ body:
         - "v164"
         - "v165"
         - "v166"
+        - "v167"
       default: 0
     validations:
       required: true
