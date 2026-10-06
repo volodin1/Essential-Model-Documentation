@@ -163,9 +163,11 @@ body:
         - "reprobus-c_v2_0"
         - "si3-cannemo"
         - "si3-gosi9"
+        - "sis1"
         - "sis2"
         - "surfex_v8_modeling_platform"
         - "tactic"
+        - "topaz1"
         - "topaz2"
         - "ukca"
         - "um7-3"
@@ -253,6 +255,9 @@ body:
         - "h158"
         - "h159"
         - "h160"
+        - "h161"
+        - "h162"
+        - "h163"
         - "no-horizontal"
       default: 0
     validations:
@@ -348,6 +353,12 @@ body:
         - "v168"
         - "v169"
         - "v170"
+        - "v171"
+        - "v172"
+        - "v173"
+        - "v174"
+        - "v175"
+        - "v176"
       default: 0
     validations:
       required: true
