@@ -123,6 +123,7 @@ body:
         - "Lambert Azimuthal Equal Area"
         - "Lambert Conformal Conic"
         - "Lambert Cylindrical Equal Area"
+        - "Latitude-Longitude"
         - "Mercator"
         - "Orthographic"
         - "Polar Stereographic"
