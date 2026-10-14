@@ -128,6 +128,8 @@ body:
         - "licom-v3-1"
         - "licom-v3-5"
         - "lim2"
+        - "lim3"
+        - "lmdz6-5"
         - "lpj-guess-4-1"
         - "m-sim"
         - "masingar-mk-3r2"
@@ -156,8 +158,10 @@ body:
         - "noah-lsm"
         - "nobmg"
         - "openifs-48r1"
+        - "orchidee-v2"
         - "oslo-aero-v3"
         - "oslo-tropstrat-v3"
+        - "pisces-v2"
         - "piscesv2-gas"
         - "pism-v1-2-line"
         - "reprobus-c_v2_0"
@@ -362,6 +366,7 @@ body:
         - "v174"
         - "v175"
         - "v176"
+        - "v177"
       default: 0
     validations:
       required: true
