@@ -157,7 +157,6 @@ body:
         - "mricom-5-4-sea-ice"
         - "nemo-gosi9"
         - "nemo-v3-6"
-        - "nemo-v4-2"
         - "nemo3-6"
         - "noah-lsm"
         - "nobmg"
@@ -273,6 +272,7 @@ body:
         - "h165"
         - "h166"
         - "h167"
+        - "h168"
         - "no-horizontal"
       default: 0
     validations:
