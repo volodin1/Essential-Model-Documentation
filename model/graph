@@ -44,24 +44,24 @@
     "Collection"
   ],
   "contents": [
-    {"@id": "arts-esm-m"},
-    {"@id": "canesm5-1"},
-    {"@id": "mcm-ua-1-0"},
-    {"@id": "ukcm2a-0-hh"},
-    {"@id": "hadcm3b-esm"},
-    {"@id": "access-esm1-6"},
-    {"@id": "icon-xpp-1-1-ed"},
-    {"@id": "icon-xpp-1-1"},
     {"@id": "ukesm1-3-ll"},
+    {"@id": "icon-xpp-1-1"},
     {"@id": "cnrm-esm2-1e"},
-    {"@id": "mri-esm3-4"},
-    {"@id": "canesm6-0-mr"},
-    {"@id": "kace-2-0-g"},
     {"@id": "cas-esm2-1-csm"},
     {"@id": "arts-esm-l"},
+    {"@id": "mcm-ua-1-0"},
     {"@id": "ukcm2-0-ll"},
-    {"@id": "gfdl-esm4p5"},
     {"@id": "ec-earth3-esm-1-1"},
-    {"@id": "awi-esm3-4-2-veg-hr"}
+    {"@id": "hadcm3b-esm"},
+    {"@id": "canesm6-0-mr"},
+    {"@id": "kace-2-0-g"},
+    {"@id": "arts-esm-m"},
+    {"@id": "canesm5-1"},
+    {"@id": "awi-esm3-4-2-veg-hr"},
+    {"@id": "gfdl-esm4p5"},
+    {"@id": "ukcm2a-0-hh"},
+    {"@id": "access-esm1-6"},
+    {"@id": "mri-esm3-4"},
+    {"@id": "icon-xpp-1-1-ed"}
   ]
 }

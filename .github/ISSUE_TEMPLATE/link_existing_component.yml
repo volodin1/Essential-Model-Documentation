@@ -145,6 +145,7 @@ body:
         - "metum-ga7-1"
         - "metum-ga9"
         - "metum-ga9a"
+        - "miroc7-agcm"
         - "mom4p1"
         - "mom5"
         - "mom5-p25"
@@ -176,6 +177,7 @@ body:
         - "si3-v4-2"
         - "sis1"
         - "sis2"
+        - "sprintars"
         - "surfex_v8_modeling_platform"
         - "tactic"
         - "topaz1"
@@ -274,6 +276,10 @@ body:
         - "h166"
         - "h167"
         - "h168"
+        - "h169"
+        - "h170"
+        - "h171"
+        - "h172"
         - "no-horizontal"
       default: 0
     validations:
