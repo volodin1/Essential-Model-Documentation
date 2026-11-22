@@ -365,7 +365,6 @@ body:
         - "land-ice_cism3-nor_h145_v152"
         - "land-ice_pism-v1-2-line_h124_v135"
         - "land-surface_bcc-avim3_h156_v137"
-        - "land-surface_cable3_h102_v105"
         - "land-surface_cas-lsm_h170_v148"
         - "land-surface_class-ctem-v3-6-2_h108_v120"
         - "land-surface_classicv1-5_h115_v123"
