@@ -128,7 +128,6 @@ body:
         - "inmlnd2-2"
         - "inmocm1-0"
         - "inmom6l"
-        - "inmom6m"
         - "jules-gl9"
         - "jules-v5-3"
         - "jules-vn5-1"
@@ -293,6 +292,9 @@ body:
         - "h171"
         - "h172"
         - "h173"
+        - "h174"
+        - "h175"
+        - "h176"
         - "no-horizontal"
       default: 0
     validations:
@@ -403,6 +405,7 @@ body:
         - "v183"
         - "v184"
         - "v185"
+        - "v186"
       default: 0
     validations:
       required: true
