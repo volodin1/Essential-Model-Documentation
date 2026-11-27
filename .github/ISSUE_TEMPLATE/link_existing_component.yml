@@ -296,6 +296,7 @@ body:
         - "h174"
         - "h175"
         - "h176"
+        - "h177"
         - "no-horizontal"
       default: 0
     validations:
