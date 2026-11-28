@@ -1,9 +1,8 @@
 {
   "@context": {
     "@alt_base": "https://volodin1.github.io/Essential-Model-Documentation/model/",
-    "@base": "https://https://github.com/volodin1/Essential-Model-Documentation/.mipcvs.dev/model/",
-    "@esgvoc": "Model",
-    "@vocab": "https://https://github.com/volodin1/Essential-Model-Documentation/.mipcvs.dev/docs/contents/Model/",
+    "@base": "https://https://github.com/volodin1/Essential-Model-Documentation/.wcrp-cmip.org/model/",
+    "@vocab": "https://https://github.com/volodin1/Essential-Model-Documentation/.wcrp-cmip.org/docs/contents/Model/",
     "calendar": {
       "@context": "https://constants.mipcvs.dev/calendar/_context",
       "@type": "@id"
