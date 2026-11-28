@@ -1,9 +1,8 @@
 {
     "@context": {
         "@alt_base": "https://volodin1.github.io/Essential-Model-Documentation/horizontal_computational_grid/",
-        "@base": "https://https://github.com/volodin1/Essential-Model-Documentation/.mipcvs.dev/horizontal_computational_grid/",
-        "@esgvoc": "HorizontalComputationalGrid",
-        "@vocab": "https://https://github.com/volodin1/Essential-Model-Documentation/.mipcvs.dev/docs/contents/HorizontalComputationalGrid/",
+        "@base": "https://https://github.com/volodin1/Essential-Model-Documentation/.wcrp-cmip.org/horizontal_computational_grid/",
+        "@vocab": "https://https://github.com/volodin1/Essential-Model-Documentation/.wcrp-cmip.org/docs/contents/HorizontalComputationalGrid/",
         "arrangement": {
             "@context": "https://constants.mipcvs.dev/arrangement/_context",
             "@type": "@id"
